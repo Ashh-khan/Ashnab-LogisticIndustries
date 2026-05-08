@@ -1,0 +1,1456 @@
+/* ========================================================= */
+/* GLOBAL CSS */
+/* ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+
+
+/* ========================================================= */
+/* STICKY LEFT SIDE BRAND */
+/* ========================================================= */
+
+.left-sticky-brand {
+    position: fixed;
+    left: -50px;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.brand-orange {
+    background-color: #f9732b;
+    color: white;
+    padding: 4px 14px;
+}
+
+.brand-light {
+    color: #393737;
+    font-weight: 300;
+}
+
+
+
+
+
+/* ========================================================= */
+/* NAVBAR CSS */
+/* ========================================================= */
+
+.custom-navbar {
+    background-color: #ffffff;
+    padding: 18px 0;
+    transition: 0.4s ease;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.company-logo {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.Nav-Logo {
+    margin-top: 5px;
+}
+
+.company-logo span {
+    color: #43b0ff;
+}
+
+.navbar-link-wrapper {
+    gap: 18px;
+}
+
+.nav-link {
+    color: #111;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 13px;
+}
+
+.nav-link:hover {
+    color: #f9732b;
+}
+
+.active-nav {
+    color: #f9732b !important;
+}
+
+.nav-toggle-btn {
+    border: none;
+    font-size: 30px;
+}
+
+.nav-toggle-btn:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+/* ========================================================= */
+/* IMAGE 1 SECTION - HERO VIDEO */
+/* ========================================================= */
+
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-dark-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text-box {
+    color: #fff;
+}
+
+.hero-main-heading {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+
+.hero-main-paragraph {
+    font-size: 20px;
+    line-height: 34px;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-main-btn {
+    background-color: #f9732b;
+    color: white;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.hero-main-btn:hover {
+    background-color: #ff8b4b;
+}
+
+.hero-outline-btn {
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+.hero-outline-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* ========================================================= */
+/* SCROLL DOWN CIRCLE */
+/* ========================================================= */
+
+.scroll-circle-wrapper {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.scroll-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    animation: bounceArrow 2s infinite;
+}
+
+@keyframes bounceArrow {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+/* ========================================================= */
+/* IMAGE 2 + IMAGE 3 COMBINED SECTION */
+/* ABOUT CONTENT OVER PLANE IMAGE */
+/* ========================================================= */
+
+.about-plane-main-section {
+    position: relative;
+    width: 100%;
+    min-height: 850px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* ========================================================= */
+/* BACKGROUND IMAGE */
+/* ========================================================= */
+
+.about-plane-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+/* ========================================================= */
+/* LIGHT OVERLAY */
+/* ========================================================= */
+
+.about-plane-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(255, 248, 242, 0.92),
+            rgba(255, 248, 242, 0.15),
+            rgba(255, 248, 242, 0.05));
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* ========================================================= */
+/* CONTENT CONTAINER */
+/* ========================================================= */
+
+.about-plane-content-container {
+    position: relative;
+    z-index: 5;
+    padding-top: 80px;
+}
+
+
+/* ========================================================= */
+/* LEFT SIDE */
+/* ========================================================= */
+
+.about-plane-left-box {
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-plane-small-heading {
+    color: #f9732b;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-plane-line {
+    width: 150px;
+    height: 4px;
+    background-color: #f9732b;
+    margin-bottom: 18px;
+}
+
+.about-plane-company-name {
+    color: #f9732b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ========================================================= */
+/* RIGHT SIDE */
+/* ========================================================= */
+
+.about-plane-right-box {
+    max-width: 700px;
+}
+
+.about-plane-description {
+    font-size: 18px;
+    line-height: 40px;
+    color: #6a6a6a;
+    font-weight: 300;
+}
+
+.about-plane-description strong {
+    color: #1d2a38;
+    font-weight: 700;
+}
+
+
+/* ========================================================= */
+/* IMAGE 4 SECTION - PHILOSOPHY */
+/* ========================================================= */
+
+.philosophy-main-section {
+    background-color: #415264;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-main-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at top left,
+            rgba(255, 255, 255, 0.06),
+            transparent 40%);
+    top: 0;
+    left: 0;
+}
+
+.philosophy-content-box {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.philosophy-heading {
+    color: #f9732b;
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.philosophy-paragraph {
+    color: white;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.philosophy-btn {
+    display: inline-block;
+    background-color: #f9732b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.philosophy-btn:hover {
+    background-color: #ff8b4b;
+}
+
+
+/* //////////////////////////// */
+
+html,
+body {
+    heigth: 100%;
+}
+
+@mixin translateY {
+    @for $i from 0 through 15 {
+        &:nth-child(#{$i}) {
+            transform: translateY(#{$i * 16}px);
+        }
+    }
+}
+
+.card {
+    position: sticky;
+    top: 5em;
+    transform-origin: center top;
+    margin: 0.5em;
+    /* height: 300px; */
+    @include translateY;
+}
+
+/* ////////////////////////////////// */
+
+/* ========================================================= */
+/* MAIN SECTION */
+/* ========================================================= */
+
+.services-stack-main-section {
+    padding: 120px 240px;
+    background: #f4f4f4;
+}
+
+
+/* ========================================================= */
+/* TOP HEADING */
+/* ========================================================= */
+
+.services-top-row {
+    margin-bottom: 80px;
+}
+
+.services-small-btn {
+    padding: 8px 22px;
+    border-radius: 50px;
+    border: 1px solid #d8d8d8;
+    background: transparent;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.services-main-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 75px;
+    color: #111;
+}
+
+.services-sub-heading {
+    font-size: 32px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+.services-heading-right p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #444;
+    margin-top: 50px;
+}
+
+
+/* ========================================================= */
+/* CARD DESIGN */
+/* ========================================================= */
+
+.service-card {
+    position: sticky;
+    top: 5em;
+    border-radius: 35px !important;
+    overflow: hidden;
+    background: #f7f3f1;
+    /* min-height: 650px; */
+
+    margin-bottom: 100px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08);
+    transform-origin: center top;
+    border: none !important;
+}
+
+
+/* ========================================================= */
+/* CARD IMAGE */
+/* ========================================================= */
+
+.service-card img {
+    height: 650px;
+    object-fit: cover;
+}
+
+
+/* ========================================================= */
+/* CARD BODY */
+/* ========================================================= */
+
+.service-card .card-body {
+    padding: 45px 70px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* ========================================================= */
+/* TITLE */
+/* ========================================================= */
+
+.service-card .card-title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
+}
+
+
+/* ========================================================= */
+/* PARAGRAPH */
+/* ========================================================= */
+
+.service-card .card-text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #444;
+}
+
+
+/* ========================================================= */
+/* TAGS */
+/* ========================================================= */
+
+.service-card .badge {
+    border-radius: 40px !important;
+    padding: 8px 20px !important;
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid #dcdcdc;
+    background: white !important;
+}
+
+
+/* ========================================================= */
+/* BUTTON */
+/* ========================================================= */
+
+.service-card .btn-primary {
+    width: fit-content;
+
+    background: #f9732b;
+    border: none;
+
+    padding: 8px 32px;
+
+    border-radius: 12px !important;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.service-card .btn-primary:hover {
+    background: #ff8c4b;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 70px 0;
+}
+
+/* ===================================================== */
+/* COMMON */
+/* ===================================================== */
+
+.small-badge {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.main-title {
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #000;
+}
+
+.main-title span {
+    display: block;
+    color: #777;
+}
+
+/* ===================================================== */
+/* BACKGROUND */
+/* ===================================================== */
+
+.certification-section,
+.achievement-section,
+.map-section {
+    background: #44596b;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 200px !important;
+}
+
+/* Background Pattern */
+.certification-section::before,
+.achievement-section::before,
+.map-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at top left,
+            rgba(255, 255, 255, 0.06) 2px,
+            transparent 2px);
+    background-size: 200px 200px;
+    opacity: 0.3;
+}
+
+
+/* <!-- ===================================================== -->
+   <!-- Clients Worldwide -->
+   <!-- ===================================================== --> */
+
+.testimonial-wrapper {
+    padding: 100px 0;
+    position: relative;
+    background-color: #fff;
+    /* This height allows room for the cards to move vertically */
+    min-height: 150vh;
+}
+
+/* Sticky behavior for the left side text */
+.sticky-content {
+    position: sticky;
+    top: 150px;
+}
+
+.label-badge {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #999;
+    /* Matches the gray 'Clients Worldwide' look */
+}
+
+.sub-text {
+    color: var(--text-light);
+    max-width: 400px;
+    line-height: 15px;
+}
+
+/* Card Styling */
+.cards-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.review-card {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.1s ease-out;
+    /* Smooth scrolling link */
+}
+
+.client-logo {
+    margin-bottom: 25px;
+    max-height: 35px;
+}
+
+.quote {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.client-info strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.client-info span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .testimonial-wrapper {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .sticky-content {
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    .main-heading {
+        font-size: 2.2rem;
+    }
+
+    .review-card {
+        transform: none !important;
+    }
+
+    /* Disable float on mobile */
+}
+
+/* ===================================================== */
+/* CERTIFICATION SECTION */
+/* ===================================================== */
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    color: #ff6d2d;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #fff;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Slider */
+
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.logo-card {
+    width: 230px;
+    height: 220px;
+    background: #fff;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-shrink: 0;
+}
+
+.logo-card img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Auto Moving Right To Left */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ===================================================== */
+/* WHY CHOOSE */
+/* ===================================================== */
+
+.why-choose-section {
+    background: #fff;
+    padding: 50px 200px !important;
+}
+
+.feature-column {
+    border-left: 1px solid #ddd;
+    padding: 0 30px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.feature-icon i {
+    font-size: 20px;
+}
+
+.feature-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.feature-column p {
+    color: #777;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+/* ===================================================== */
+/* ACHIEVEMENT SECTION */
+/* ===================================================== */
+
+.achievement-title {
+    font-size: 30px;
+    color: #ff6d2d;
+    margin-bottom: 25px;
+}
+
+.achievement-text {
+    color: #fff;
+    line-height: 1.5;
+    max-width: 500px;
+    font-size: 15px;
+}
+
+.counter-box h3 {
+    font-size: 38px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.counter-box p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* ===================================================== */
+/* AWARDS */
+/* ===================================================== */
+
+.awards-section {
+    background: #fff;
+}
+
+.awards-header {
+    margin-bottom: 60px;
+}
+
+.award-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px 25px;
+    height: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+}
+
+.award-card img {
+    height: 70px;
+    object-fit: contain;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.award-card p {
+    line-height: 1.8;
+    color: #444;
+}
+
+/* ===================================================== */
+/* MAP SECTION */
+/* ===================================================== */
+
+.map-title {
+    color: #ff6d2d;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.world-map {
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+/* ===================================================== */
+/* region SECTION */
+/* ===================================================== */
+.main-wrapper {
+    padding: 100px 250px 10px;
+}
+
+/* Titles and Headers */
+.region-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.text-orange {
+    color: orange;
+    font-size: 23px;
+}
+
+.region-intro {
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+/* Location Cards */
+.location-card {
+    padding-right: 15px;
+}
+
+.city-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.address-details {
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    min-height: 80px;
+    /* Keeps cards aligned on desktop */
+}
+
+.contact-number {
+    display: inline-block;
+    color: var(--gray-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.contact-number:hover {
+    color: var(--primary-orange);
+}
+
+/* Footer Section */
+.site-footer {
+    margin-top: 80px;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: var(--border-light);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--footer-text);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--footer-text);
+}
+
+.footer-links a:hover {
+    color: var(--primary-orange);
+}
+
+.dot-separator {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablets (Portrait) */
+@media (max-width: 991px) {
+    .region-title {
+        font-size: 1.8rem;
+    }
+
+    .main-wrapper {
+        padding: 50px 0;
+    }
+
+    .address-details {
+        min-height: auto;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+    }
+
+    .region-intro {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+@media (max-width: 991px) {
+
+    .main-title {
+        font-size: 38px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+
+    .feature-column {
+        margin-bottom: 40px;
+        border-left: none;
+    }
+
+    .achievement-title,
+    .map-title,
+    .section-header h2 {
+        font-size: 40px;
+    }
+
+    .counter-box h3 {
+        font-size: 52px;
+    }
+
+    .counter-box p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    section {
+        padding: 40px 0;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .achievement-title,
+    .map-title,
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .logo-card {
+        width: 180px;
+        height: 170px;
+    }
+
+    .counter-box h3 {
+        font-size: 42px;
+    }
+
+    .counter-box p {
+        font-size: 18px;
+    }
+
+    .feature-column h4 {
+        font-size: 24px;
+    }
+}
+
+
+/* ========================================================= */
+/* RESPONSIVE OF CARD CSS */
+/* ========================================================= */
+
+@media (max-width: 991px) {
+
+    .services-main-heading {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    .services-sub-heading {
+        font-size: 38px;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+
+    .service-card img {
+        height: 350px;
+    }
+
+    .service-card .card-body {
+        padding: 40px 30px !important;
+    }
+
+    .service-card .card-title {
+        font-size: 22px;
+    }
+
+    .service-card .card-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .services-stack-main-section {
+        padding: 120px 140px;
+        background: #f4f4f4;
+    }
+
+    .why-choose-section {
+        background: #fff;
+        padding: 50px 140px !important;
+    }
+
+    .achievement-section {
+        padding: 50px 140px !important;
+    }
+
+    .certification-section {
+        padding: 50px 80px !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .services-stack-main-section {
+        padding: 80px 0;
+    }
+
+    .services-main-heading {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .services-sub-heading {
+        font-size: 30px;
+    }
+
+    .services-heading-right p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .service-card img {
+        height: 260px;
+    }
+
+    .service-card .card-body {
+        padding: 30px 22px !important;
+    }
+
+    .service-card .card-title {
+        font-size: 20px;
+    }
+
+    .service-card .card-text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .service-card .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ========================================================= */
+/* RESPONSIVE CSS */
+/* ========================================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        background-color: white;
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .hero-main-heading {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .hero-main-paragraph {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* ======================================= */
+    /* NEW ABOUT + PLANE RESPONSIVE CSS */
+    /* ======================================= */
+
+    .about-plane-main-section {
+        min-height: 700px;
+    }
+
+    .about-plane-content-container {
+        padding-top: 70px;
+    }
+
+    .about-plane-small-heading {
+        font-size: 22px;
+    }
+
+    .about-plane-company-name {
+        font-size: 24px;
+    }
+
+    .about-plane-description {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    /* ======================================= */
+
+    .philosophy-heading {
+        font-size: 52px;
+    }
+
+    .philosophy-paragraph {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .left-sticky-brand {
+        font-size: 24px;
+        left: -55px;
+    }
+
+    .hero-main-heading {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .hero-main-paragraph {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .hero-btn-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-main-btn,
+    .hero-outline-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ======================================= */
+    /* NEW ABOUT + PLANE RESPONSIVE CSS */
+    /* ======================================= */
+
+    .about-plane-main-section {
+        min-height: 620px;
+    }
+
+    .about-plane-content-container {
+        padding-top: 60px;
+    }
+
+    .about-plane-left-box {
+        margin-bottom: 30px;
+    }
+
+    .about-plane-small-heading {
+        font-size: 20px;
+    }
+
+    .about-plane-company-name {
+        font-size: 22px;
+    }
+
+    .about-plane-line {
+        width: 120px;
+    }
+
+    .about-plane-description {
+        font-size: 19px;
+        line-height: 34px;
+    }
+
+    /* ======================================= */
+
+    .philosophy-heading {
+        font-size: 42px;
+    }
+
+    .philosophy-paragraph {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    .hero-video-section {
+        height: 90vh;
+    }
+
+    .hero-main-heading {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .scroll-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* ======================================= */
+    /* NEW ABOUT + PLANE RESPONSIVE CSS */
+    /* ======================================= */
+
+    .about-plane-main-section {
+        min-height: 500px;
+    }
+
+    .about-plane-content-container {
+        padding-top: 50px;
+    }
+
+    .about-plane-small-heading {
+        font-size: 18px;
+    }
+
+    .about-plane-company-name {
+        font-size: 20px;
+    }
+
+    .about-plane-description {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* ======================================= */
+
+    .philosophy-main-section {
+        padding: 80px 0;
+    }
+
+}
